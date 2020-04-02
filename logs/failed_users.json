@@ -1,0 +1,12 @@
+{
+    "Default User": {
+        "Brief message": "Access is denied",
+        "Error message": "[WinError 5] Access is denied: 'C:\\\\Users\\\\Default User'",
+        "User": "Default User"
+    },
+    "defaultuser100000.DESKTOP-0IM3Q5G": {
+        "Brief message": "Access is denied",
+        "Error message": "[WinError 5] Access is denied: 'C:\\\\Users\\\\defaultuser100000.DESKTOP-0IM3Q5G'",
+        "User": "defaultuser100000.DESKTOP-0IM3Q5G"
+    }
+}
