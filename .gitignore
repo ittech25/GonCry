@@ -1,3 +1,4 @@
 secret.txt
 test.py
+logs/failed_users.json
 __pycache__/
