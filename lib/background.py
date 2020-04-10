@@ -16,9 +16,6 @@ def changeBG(path):
 def get_background():
     """Returns a random background in data/backgrounds/"""
 
-    background = random.choice(os.listdir('data\\backgrounds'))
+    background = random.choice(os.listdir('backgrounds'))
     
-    return os.path.abspath(os.path.join(os.path.dirname(__file__), f'..\\data\\backgrounds\\{background}'))
-
-
-changeBG(get_background())
+    return os.path.abspath(os.path.join(os.path.dirname(__file__), f'..\\backgrounds\\{background}'))
