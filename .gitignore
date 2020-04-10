@@ -1,4 +1,5 @@
 secret.txt
 test.py
 data/failed_users.json
+data/successful_users.json
 __pycache__/
